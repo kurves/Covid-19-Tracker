@@ -1,0 +1,14 @@
+.table{
+    margin-top:15px;
+    overflow:auto;
+   margin-right:-30px;
+    height:350px;
+    
+    background-color:white;
+    padding-right:10px;
+}
+.table tr{
+    display:flex;
+    justify-content:space-between;
+  
+}
