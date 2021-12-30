@@ -17,7 +17,7 @@ const casesColors = {
 	},
 	recovered: {
 		rgb: "rgb(30, 180, 62)",
-		multiplier: 200,
+		multiplier: 150,
 	},
 };
 
@@ -35,7 +35,7 @@ export function sortData(data){
     return sortedData;
 }
 
-export function showMapData (data,casesType){
+export function showMapData (data,casesType="cases"){
  return data.map((country)=>(
 <Circle
 center={[country.countryInfo.lat,country.countryInfo.long]}
