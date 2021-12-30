@@ -1,0 +1,28 @@
+.BoxInfo{
+    flex:1;
+    cursor:pointer;
+}
+.BoxInfo:not(:last-child){
+    margin-right:10px;
+}
+.BoxInfo__cases{
+    color:red;
+    font-weight:700;
+    font-size:1.5rem;
+    margin-bottom:0.4rem;
+
+}
+.BoxInfo__total{
+    color:grey;
+    font-weight:800;
+    font-size:0.9rem;
+    margin-top:15px;
+}
+.BoxInfo__title{
+    color:black!important;
+    font-weight:900 !important;
+  
+}
+.BoxInfo--selected{
+    border-top:6px solid red;
+}
