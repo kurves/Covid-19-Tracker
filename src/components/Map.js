@@ -3,7 +3,7 @@ import {  MapContainer,TileLayer,Marker,Popup } from 'react-leaflet'
 import './Map.css';
 import {showMapData} from '../utilities/utils';
 
-function Map({center,zoom,countries,casesType}) {
+function Map({center,zoom,countries,casesType="cases"}) {
     
     return (
 			<div className="map">

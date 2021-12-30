@@ -1,12 +1,13 @@
     import React from 'react'
     import {Card,CardContent,Typography} from '@material-ui/core'
+import './BoxInfo.css'
 
-
-    function BoxInfo({cases,title,total}) {
+    function BoxInfo({cases,casesType=("cases"),active,title,total, ...props}) {
         
         return (
             <div>
-                <Card className="BoxInfo">
+                <Card className={active? 'BoxInfo--selected':'BoxInfo'}
+                onClick={props.onClick}>
                     <CardContent>
                         <Typography className="BoxInfo__title"color='primary'>
                             {title} 
