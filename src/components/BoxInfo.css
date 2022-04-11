@@ -1,7 +1,16 @@
 .BoxInfo{
     flex:1;
     cursor:pointer;
+    height:35vh;
+ 
 }
+
+
+
+
+
+
+
 .BoxInfo:not(:last-child){
     margin-right:10px;
 }
@@ -25,4 +34,5 @@
 }
 .BoxInfo--selected{
     border-top:6px solid red;
+    height:35vh;
 }

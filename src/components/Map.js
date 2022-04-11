@@ -1,9 +1,9 @@
 import React from 'react'
-import {  MapContainer,TileLayer,Marker,Popup } from 'react-leaflet'
+import {  MapContainer,TileLayer } from 'react-leaflet'
 import './Map.css';
 import {showMapData} from '../utilities/utils';
 
-function Map({center,zoom,countries,casesType="cases"}) {
+function Map({center,zoom,countries,casesType="cases",cases}) {
     
     return (
 			<div className="map">
@@ -12,7 +12,7 @@ function Map({center,zoom,countries,casesType="cases"}) {
 						attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 						url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
 					/>
-					{showMapData(countries,casesType)}
+					{showMapData(countries,casesType,cases)}
 				</MapContainer>
 			</div>
 		);

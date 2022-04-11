@@ -80,8 +80,8 @@ setMapZoom(4);
 							value={country}
 							onChange={handleCountryChange}>
 							<MenuItem value="worldWide">Worldwide</MenuItem>
-							{countries.map((country) => (
-								<MenuItem value={country.value}>{country.name}</MenuItem>
+							{countries.map((country,id) => (
+								<MenuItem key={id}value={country.value}>{country.name}</MenuItem>
 							))}
 						</Select>
 					</FormControl>
@@ -95,18 +95,21 @@ setMapZoom(4);
 						cases={formatData(countryDetails.todayCases)}
 						total={formatData(countryDetails.cases)}
 					/>
-					<BoxInfo
-						onClick={() => setCasesType("recovered")}
-						title="Coronavirus Recoveries"
-						cases={formatData(countryDetails.todayRecovered)}
-						total={formatData(countryDetails.recovered)}
-					/>
+
 					<BoxInfo
 						active={casesType === "deaths"}
 						onClick={() => setCasesType("deaths")}
 						title="Coronavirus Deaths"
 						cases={formatData(countryDetails.todayDeaths)}
 						total={formatData(countryDetails.deaths)}
+					/>
+
+					<BoxInfo
+						active={casesType === "recoveries"}
+						onClick={() => setCasesType("recovered")}
+						title="Coronavirus Recoveries"
+						cases={formatData(countryDetails.todayRecovered)}
+						total={formatData(countryDetails.recovered)}
 					/>
 				</div>
 				<Map

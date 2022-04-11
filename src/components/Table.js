@@ -5,7 +5,7 @@
         return (
             <div className="table">
                 {countries.map(({country,cases})=>(
-                  <tr>
+                  <tr key={cases}>
                       <td>{country}</td>
                       <td style={{color:"red"}}><strong>{numeral(cases).format("0,0")}</strong></td>
                   </tr>

@@ -22,7 +22,7 @@ margin-bottom:15px;
 }
 .app__stats{
   display:flex;
-  justify-content:space-around;
+  justify-content:space-between;
  
 }
 @media(max-width:990px){
