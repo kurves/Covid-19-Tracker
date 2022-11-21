@@ -7,7 +7,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 With the health situation in the world right now, an app that monitors the cases would surely come in handy, that was my motivation for creating this app. I used React to create the reusable components and the clickable elements for great user experience.
 
+## API
 I pulled data from [this](https://disease.sh/v3/covid/countries) API.
+
+## Description
+
 The app consists of a Map component which renders a world map actualized by react-leaflet.
 It also has a table which shows the countries and the corresponding covid-19 cases. It also has clickable Card components from @material-ui.
 
