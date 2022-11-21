@@ -1,6 +1,9 @@
 
+## Introduction
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Motivation
 
 With the health situation in the world right now, an app that monitors the cases would surely come in handy, that was my motivation for creating this app. I used React to create the reusable components and the clickable elements for great user experience.
 
