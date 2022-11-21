@@ -19,7 +19,7 @@ View the app here [kurves/covid-19 Tracker](https://covid-19-tracker-dab65.web.a
  - numeral
  - react
  - react-dom
-    "react-leaflet": "^3.2.2",
-    "react-query": "^3.34.6",
-    "react-scripts": "5.0.0",
-    "web-vitals": "^2.1.2"
+ - react-leaflet
+ - react-query
+ - react-scripts
+ - web-vitals
